@@ -122,7 +122,7 @@ st.title("🏥 AI Health Intelligence Dashboard")
 # -----------------------
 api_key = os.environ.get("GROQ_API_KEY")
 if not api_key:
-st.error("Missing GROQ_API_KEY")
+        st.error("Missing GROQ_API_KEY")
 st.stop()
 
 client = Groq(api_key=api_key)
